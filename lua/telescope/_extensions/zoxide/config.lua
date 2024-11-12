@@ -32,7 +32,8 @@ local default_config = {
         vim.cmd.tcd(selection.path)
       end,
     },
-  }
+  },
+  previewer = require("telescope.previewers.buffer_previewer").cat.new({}),
 }
 
 local current_config = default_config
